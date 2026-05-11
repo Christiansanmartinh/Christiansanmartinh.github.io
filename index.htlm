@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Christian San Martín</title>
+
+<style>
+<style>
+
+/* ===== GLOBAL ===== */
+body {
+  font-family: Inter, -apple-system, sans-serif;
+  margin: 0;
+  color: #111;
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+section {
+  padding: 140px 0;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 68px;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 17px;
+  line-height: 28px;
+  color: #666;
+}
+
+/* ===== NAV ===== */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: white;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* ===== BUTTONS ===== */
+.button {
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.primary {
+  background: #2F6BFF;
+  color: white;
+}
+
+.primary:hover {
+  background: #1f54d6;
+}
+
+.secondary {
+  border: 1px solid #ddd;
+}
+
+.secondary:hover {
+  border-color: #bbb;
+}
+
+/* ===== CARDS ===== */
+.card {
+  border: 1px solid #eee;
+  padding: 28px;
+  border-radius: 10px;
+  transition: all 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+/* ===== LINKS ===== */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+</style>
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="navbar">
+  <div class="container nav-inner">
+    <div><strong>Christian San Martín</strong></div>
+    <div class="nav-menu">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Case Studies</a>
+      <a href="#">AI</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1>Communication, Project Coordination and AI-Enabled Content</h1>
+    <p>
+      I help organisations translate complex ideas into clear communication and deliver multi-stakeholder projects across digital and institutional environments.
+    </p>
+
+    <div class="buttons">
+      <a href="#" class="button primary">View Case Studies</a>
+      <a href="#" class="button secondary">Contact Me</a>
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section>
+  <div class="container">
+    <h2>Selected Work</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Blockchain Traceability</h3>
+        <p>Coordinated an EU-level project exploring blockchain for intellectual property protection.</p>
+      </div>
+
+      <div class="card">
+        <h3>EU Training Programmes</h3>
+        <p>Developed certified learning modules adopted across customs and police in Europe.</p>
+      </div>
+
+      <div class="card">
+        <h3>SME Communication Strategy</h3>
+        <p>Created multilingual communication to help SMEs understand intellectual property.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section>
+  <div class="container">
+    <h2>About</h2>
+    <p style="max-width:500px;">
+      I am a communication specialist and project coordinator with experience across EU institutions, digital content, and complex stakeholder environments. My work focuses on bringing clarity to complexity and delivering structured, impactful communication.
+    </p>
+  </div>
+</section>
+
+<!-- AI SECTION -->
+<section class="ai-section">
+  <div class="container">
+    <h2>AI in My Work</h2>
+    <p style="max-width:600px;">
+      I use AI as a practical tool to support communication and project delivery. I integrate AI into workflows to improve content development, research, and efficiency, while maintaining strong human oversight and quality.
+    </p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="container">
+    <h2>Let’s work together</h2>
+    <p>Available for consulting, projects, and collaborations.</p>
+
+    <div class="buttons">
+      <a href="mailto:your@email.com" class="button primary">Email Me</a>
+      <a href="#" class="button secondary">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container footer-inner">
+    <div>© 2026 Christian San Martín</div>
+    <div>
+      <a href="#">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
