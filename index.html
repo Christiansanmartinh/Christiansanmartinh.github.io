@@ -74,6 +74,15 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+h3 {
+  margin: 4px 0;
+}
+
 p {
   color: #666;
   line-height: 26px;
@@ -122,6 +131,8 @@ p {
   flex: 1;
   min-width: 280px;
   transition: all 0.25s ease;
+  text-decoration: none;
+  color: inherit;
 }
 
 .card:hover {
@@ -129,10 +140,12 @@ p {
   box-shadow: 0 12px 30px rgba(0,0,0,0.08);
 }
 
-/* ===== TYPO ===== */
-h2 {
-  font-size: 28px;
-  margin-bottom: 16px;
+/* ===== IMAGE ===== */
+.hero-img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
 </style>
@@ -172,12 +185,9 @@ h2 {
       </div>
     </div>
 
-   <img src="hero.jpg" style="
-width:100%;
-height:260px;
-object-fit: cover;
-border-radius:12px;
-">
+    <div style="flex:1;">
+      <img src="hero.jpg" class="hero-img">
+    </div>
 
   </div>
 </section>
@@ -189,6 +199,7 @@ border-radius:12px;
     <h2>What I Do</h2>
 
     <div class="cards">
+
       <div class="card">
         <h3>Structure</h3>
         <p>Bringing clarity to complex stakeholder environments.</p>
@@ -196,15 +207,15 @@ border-radius:12px;
 
       <div class="card">
         <h3>Communication</h3>
-        <p>Translating technical topics into clear narratives.</p>
+        <p>Translating complex topics into clear narratives.</p>
       </div>
 
       <div class="card">
         <h3>Execution</h3>
         <p>Ensuring delivery stays aligned and efficient.</p>
       </div>
-    </div>
 
+    </div>
   </div>
 </section>
 
@@ -215,23 +226,25 @@ border-radius:12px;
     <h2>Selected Work</h2>
 
     <div class="cards">
-      <div class="card">
+
+      <a href="case-blockchain.html" class="card">
         <div style="font-size:12px;color:#888;">EU PROJECT</div>
         <h3>Blockchain Traceability</h3>
         <p>Exploring blockchain in intellectual property systems.</p>
-      </div>
+      </a>
 
-      <div class="card">
+      <a href="case-training.html" class="card">
         <div style="font-size:12px;color:#888;">TRAINING</div>
         <h3>EU Training Programmes</h3>
-        <p>Certified programmes across customs.</p>
-      </div>
+        <p>Certified programmes across customs and police.</p>
+      </a>
 
-      <div class="card">
+      <a href="case-sme.html" class="card">
         <div style="font-size:12px;color:#888;">COMMUNICATION</div>
-        <h3>SME Communication</h3>
+        <h3>SME Communication Strategy</h3>
         <p>Multilingual frameworks for SME engagement.</p>
-      </div>
+      </a>
+
     </div>
 
   </div>
@@ -241,6 +254,7 @@ border-radius:12px;
 <section id="about">
   <div class="container">
     <h2>About</h2>
+
     <p>
       Communication specialist and project coordinator with experience across EU institutions and digital environments.
     </p>
@@ -251,6 +265,7 @@ border-radius:12px;
 <section id="ai">
   <div class="container">
     <h2>AI in My Work</h2>
+
     <p>
       Integrating AI tools to improve workflows, research and content production.
     </p>
@@ -266,7 +281,7 @@ border-radius:12px;
     <p>Available for consulting and collaboration.</p>
 
     <div style="margin-top:20px; display:flex; gap:12px;">
-      <a href="mailto:youremail@email.com" class="button primary">Email Me</a>
+      <a href="mailto:your@email.com" class="button primary">Email Me</a>
       <a href="#" class="button secondary">LinkedIn</a>
     </div>
 
@@ -275,4 +290,3 @@ border-radius:12px;
 
 </body>
 </html>
-``
