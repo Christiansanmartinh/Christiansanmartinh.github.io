@@ -7,6 +7,10 @@
 <title>Christian San Martín</title>
 
 <style>
+:root {
+  --accent: #2F6BFF;
+  --light-bg: #f7f8fb;
+}
 
 /* ===== BASE ===== */
 html {
@@ -96,7 +100,7 @@ p {
 }
 
 .primary {
-  background: #2F6BFF;
+  background: var(--accent);
   color: white;
 }
 
@@ -156,6 +160,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+a:hover {
+  color: var(--accent);
+}
 
 </style>
 
@@ -184,39 +191,23 @@ a {
 
 <!-- HERO -->
 <section id="home" class="hero">
-  <div class="container">
-  <h1>
-Translating complexity into clear communication
-</h1>
-<p>
-I support organisations in delivering complex, multi-stakeholder projects across EU and digital environments, integrating communication and AI-enabled workflows.
-</p>
-    <div class="buttons">
-      <a href="#work" class="button primarycontact" class="button secondary
-      <a href="#" class="button primary">View Case Studies</a>
-      <a href="#" class="button secondary">Contact Me</a>
+  <div class="container" style="display:flex; gap:40px; align-items:center;">
+
+    <div style="flex:1;">
+      <h1>Translating complexity into clear communication</h1>
+
+      <p>
+        I support organisations in delivering complex, multi-stakeholder projects across EU and digital environments, combining structured communication with AI-enabled workflows.
+      </p>
+
+      <div style="margin-top:30px;">
+        #workView Case Studies</a>
+        #contactContact Me</a>
+      </div>
     </div>
-  </div>
-</section>
-<section>
-  <div class="container">
-    <h2>What I Do</h2>
 
-    <div class="cards">
-      <div class="card">
-        <h3>Structure</h3>
-        <p>I bring clarity to complex projects and stakeholder environments.</p>
-      </div>
-
-      <div class="card">
-        <h3>Communication</h3>
-        <p>I translate technical and institutional topics into clear narratives.</p>
-      </div>
-
-      <div class="card">
-        <h3>Execution</h3>
-        <p>I ensure delivery stays aligned, efficient, and outcome-focused.</p>
-      </div>
+    <div style="flex:1;">
+      <div style="background:#f0f2f7; height:300px; border-radius:12px;"></div>
     </div>
 
   </div>
