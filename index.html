@@ -26,7 +26,18 @@ body {
 }
 
 section {
-  padding: 140px 0;
+ padding: 140px 0;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s ease forwards;
+
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 h1 {
@@ -142,6 +153,29 @@ I support organisations in delivering complex, multi-stakeholder projects across
     </div>
   </div>
 </section>
+<section>
+  <div class="container">
+    <h2>What I Do</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Structure</h3>
+        <p>I bring clarity to complex projects and stakeholder environments.</p>
+      </div>
+
+      <div class="card">
+        <h3>Communication</h3>
+        <p>I translate technical and institutional topics into clear narratives.</p>
+      </div>
+
+      <div class="card">
+        <h3>Execution</h3>
+        <p>I ensure delivery stays aligned, efficient, and outcome-focused.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 <!-- CASE STUDIES -->
 <section id="work">
@@ -149,20 +183,22 @@ I support organisations in delivering complex, multi-stakeholder projects across
     <h2>Selected Work</h2>
 
     <div class="cards">
-      <div class="card">
+
+      <a href="case-blockchain.html" class="card">
         <h3>Blockchain Traceability</h3>
-        <p>Coordinated an EU-level project exploring blockchain for intellectual property protection.</p>
-      </div>
+        <p>EU-level project exploring blockchain for intellectual property.</p>
+      </a>
 
-      <div class="card">
+      <a href="case-training.html" class="card">
         <h3>EU Training Programmes</h3>
-        <p>Developed certified learning modules adopted across customs and police in Europe.</p>
-      </div>
+        <p>Development of certified training across customs and police.</p>
+      </a>
 
-      <div class="card">
+      <a href="case-sme.html" class="card">
         <h3>SME Communication Strategy</h3>
-        <p>Created multilingual communication to help SMEs understand intellectual property.</p>
-      </div>
+        <p>Multilingual communication frameworks for SME engagement.</p>
+      </a>
+
     </div>
   </div>
 </section>
