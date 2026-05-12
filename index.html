@@ -17,7 +17,6 @@ body {
   background: #fff;
 }
 
-/* ===== LAYOUT ===== */
 .container {
   max-width: 1000px;
   margin: 0 auto;
@@ -32,7 +31,7 @@ section { padding: 100px 0; }
   top: 0;
   background: white;
   border-bottom: 1px solid #eee;
-  padding: 20px 0;
+  padding: 18px 0;
 }
 
 .nav-inner {
@@ -43,7 +42,7 @@ section { padding: 100px 0; }
 
 .nav-menu {
   display: flex;
-  gap: 32px;
+  gap: 28px;
 }
 
 .nav-menu a {
@@ -52,7 +51,9 @@ section { padding: 100px 0; }
   font-size: 15px;
 }
 
-.nav-menu a:hover { color: #2F6BFF; }
+.nav-menu a:hover {
+  color: #2F6BFF;
+}
 
 /* ===== HERO ===== */
 .hero {
@@ -60,20 +61,17 @@ section { padding: 100px 0; }
   padding-bottom: 70px;
 }
 
+.hero-inner {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
 h1 {
-  font-size: 48px;
-  line-height: 58px;
-  max-width: 600px;
+  font-size: 46px;
+  line-height: 56px;
+  max-width: 550px;
   margin: 0;
-}
-
-h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-h3 {
-  margin: 4px 0;
 }
 
 p {
@@ -88,6 +86,7 @@ p {
   font-size: 14px;
   text-decoration: none;
   display: inline-block;
+  font-weight: 500;
   transition: all 0.2s ease;
 }
 
@@ -118,7 +117,7 @@ p {
 
 .card {
   border: 1px solid #eee;
-  padding: 22px;
+  padding: 20px;
   border-radius: 10px;
   flex: 1;
   min-width: 280px;
@@ -130,6 +129,12 @@ p {
   box-shadow: 0 12px 30px rgba(0,0,0,0.08);
 }
 
+/* ===== TYPO ===== */
+h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
 </style>
 </head>
 
@@ -138,23 +143,21 @@ p {
 <!-- NAVBAR -->
 <div class="navbar">
   <div class="container nav-inner">
-
     <div><strong>Christian San Martín</strong></div>
 
     <div class="nav-menu">
-      What I Do
-      Work
-      About
-      AI
-      Contact
+      <a href="#what">What I Do</a>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#ai">AI</a>
+      <a href="#contact">Contact</a>
     </div>
-
   </div>
 </div>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="container" style="display:flex; gap:60px; align-items:center;">
+  <div class="container hero-inner">
 
     <div style="flex:1;">
       <h1>Translating complexity into clear communication</h1>
@@ -163,20 +166,17 @@ p {
         I support organisations in delivering complex, multi-stakeholder projects across EU and digital environments.
       </p>
 
-      <div style="margin-top:20px; display:flex; gap:12px;">
-
-  View Case Studies</a>
-
-  Contact Me</a>
-
-</div>
-``
+      <div style="margin-top:24px; display:flex; gap:12px;">
+        <a href="#work" class="button primary">View Case Studies</a>
+        <a href="#contact" class="button secondary">Contact Me</a>
+      </div>
+    </div>
 
     <div style="flex:1;">
       <div style="
         height:260px;
         border-radius:12px;
-        background: linear-gradient(135deg, #2F6BFF20, #00000005);
+        background: linear-gradient(135deg, #2F6BFF20, #00000008);
       "></div>
     </div>
 
@@ -190,7 +190,6 @@ p {
     <h2>What I Do</h2>
 
     <div class="cards">
-
       <div class="card">
         <h3>Structure</h3>
         <p>Bringing clarity to complex stakeholder environments.</p>
@@ -198,14 +197,13 @@ p {
 
       <div class="card">
         <h3>Communication</h3>
-        <p>Translating complex topics into clear narratives.</p>
+        <p>Translating technical topics into clear narratives.</p>
       </div>
 
       <div class="card">
         <h3>Execution</h3>
         <p>Ensuring delivery stays aligned and efficient.</p>
       </div>
-
     </div>
 
   </div>
@@ -218,7 +216,6 @@ p {
     <h2>Selected Work</h2>
 
     <div class="cards">
-
       <div class="card">
         <div style="font-size:12px;color:#888;">EU PROJECT</div>
         <h3>Blockchain Traceability</h3>
@@ -228,15 +225,14 @@ p {
       <div class="card">
         <div style="font-size:12px;color:#888;">TRAINING</div>
         <h3>EU Training Programmes</h3>
-        <p>Certified programmes across customs and police.</p>
+        <p>Certified programmes across customs.</p>
       </div>
 
       <div class="card">
         <div style="font-size:12px;color:#888;">COMMUNICATION</div>
-        <h3>SME Communication Strategy</h3>
-        <p>Multilingual communication for SME engagement.</p>
+        <h3>SME Communication</h3>
+        <p>Multilingual frameworks for SME engagement.</p>
       </div>
-
     </div>
 
   </div>
@@ -247,7 +243,7 @@ p {
   <div class="container">
     <h2>About</h2>
     <p>
-      Communication specialist and project coordinator working across EU institutions and digital environments.
+      Communication specialist and project coordinator with experience across EU institutions and digital environments.
     </p>
   </div>
 </section>
@@ -257,7 +253,7 @@ p {
   <div class="container">
     <h2>AI in My Work</h2>
     <p>
-      Integrating AI tools to improve content development, research, and workflow efficiency.
+      Integrating AI tools to improve workflows, research and content production.
     </p>
   </div>
 </section>
@@ -270,14 +266,12 @@ p {
 
     <p>Available for consulting and collaboration.</p>
 
-<div style="margin-top:20px; display:flex; gap:12px;">
+    <div style="margin-top:20px; display:flex; gap:12px;">
+      <a href="mailto:youremail@email.com" class="button primary">Email Me</a>
+      <a href="#" class="button secondary">LinkedIn</a>
+    </div>
 
-  Email Me</a>
-
-  LinkedIn</a>
-
-</div>
-``
+  </div>
 </section>
 
 </body>
